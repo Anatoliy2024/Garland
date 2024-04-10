@@ -1,0 +1,35 @@
+#gir {
+  position: fixed;
+  top: 0;
+  left: 0;
+  //   background-image: url('http://lh5.googleusercontent.com/-obNunPiVVd4/VJOuk2f29_I/AAAAAAAAE3Y/SOoFIrFTTkk/s800/gerljanda1.png');
+  background-image: 'url("/Garland/elemGarland/gir.png")';
+
+  width: 100%;
+  overflow: hidden;
+  z-index: 99;
+  pointer-events: none;
+}
+#nums1 {
+  padding: 100px;
+}
+.gir1 {
+  background-position: 0 0;
+}
+.gir2 {
+  background-position: 0 -62px;
+}
+.gir3 {
+  background-position: 0 -124px;
+}
+
+// /* Добавьте анимацию для мигания */
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.light {
+  animation: blink 2s infinite; /* Анимация мигания */
+}
