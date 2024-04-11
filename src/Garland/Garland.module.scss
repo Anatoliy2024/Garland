@@ -1,25 +1,30 @@
-#gir {
+@mixin gir {
   position: fixed;
   top: 0;
   left: 0;
   //   background-image: url('http://lh5.googleusercontent.com/-obNunPiVVd4/VJOuk2f29_I/AAAAAAAAE3Y/SOoFIrFTTkk/s800/gerljanda1.png');
-  background-image: 'url("/Garland/elemGarland/gir.png")';
-
+  // background-image: 'url("/Garland/elemGarland/gir.png")';
+  height: 62px;
   width: 100%;
   overflow: hidden;
   z-index: 99;
   pointer-events: none;
 }
-#nums1 {
-  padding: 100px;
-}
+// #nums1 {
+//   padding: 100px;
+// }
 .gir1 {
+  @include gir;
   background-position: 0 0;
 }
 .gir2 {
+  @include gir;
+
   background-position: 0 -62px;
 }
 .gir3 {
+  @include gir;
+
   background-position: 0 -124px;
 }
 
